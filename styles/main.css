@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.form-el {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  border: 1px solid #b89d64 !important;
+  font-size: 16px;
+  padding: 12px 8px;
+}
+
+form button {
+  background-color: #b89d64;
+  border-radius: 8px;
+  color: white;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Header start */
+.header {
+  padding: 16px 0;
+  background-color: #3f2c14;
+  color: white;
+}
+
+.header .site-logo {
+  display: block;
+  font-size: 20px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header .header-nav {
+  display: flex;
+  gap: 32px;
+}
+
+
+
+.hero-section {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.hero-details {
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.hero-details h1 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.hero-details p {
+  font-size: 14px;
+}
+
+.hero-details a {
+  margin-top: 32px;
+  display: block;
+  background-color: #b89d64;
+  border-radius: 8px;
+  color: white;
+
+  text-transform: uppercase;
+  padding: 12px 20px;
+}
+
+
+
+.coffee-grid-section {
+  padding: 64px 0;
+  background-color: #e5ddca;
+}
+
+.coffee-grid-section h1 {
+  margin-bottom: 32px;
+}
+
+.coffee-grid-section .container.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.coffee-grid-section .coffee-card {
+  width: 100%;
+  overflow: hidden;
+}
+.coffee-grid-section .coffee-card img {
+  width: 100%;
+  height: 70vw;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.coffee-card h2 {
+  font-size: 18px;
+}
+
+.coffee-card:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.coffee-grid-section .coffee-card > *:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.choose-us-section {
+  padding: 64px 0;
+}
+
+.choose-us-section h1 {
+  margin-bottom: 32px;
+}
+
+.choose-us-section .choose-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.choose-us-list h2 {
+  font-weight: bold;
+  color: #937c4a;
+  text-decoration: underline;
+}
+
+.choose-us-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.footer {
+  color: white;
+  padding: 24px 0;
+  background-color: #3f2c14;
+}
+
+.copyright.container {
+  text-align: center;
+  color: silver;
+}
+
+.footer .container.links {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-wrapper {
+  margin: 64px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.contact-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact-side {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact-side h2 {
+  margin-bottom: 8px;
+}
+
+.about-section {
+  padding: 64px 0;
+}
+
+.about-section h2 {
+  font-size: 18px;
+  color: #937c4a;
+  margin: 16px 0;
+}
+
+.about-section .video {
+  width: 100%;
+  height: 170px;
+}
+
+.coffee-card-location h2 {
+  color: #937c4a;
+  font-size: 20px;
+}
+
+.coffee-card-location:hover {
+  text-decoration: none;
+}
+.coffee-card-location:hover h2 {
+  text-decoration: underline;
+}
+
+.contact-form.contact-form-location h1 {
+  margin-bottom: 24px;
+  color: #937c4a;
+}
+
+.contact-form.contact-form-location p {
+  line-height: 24px;
+}
+
+/* Responsive Styles */
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 600px;
+  }
+
+  .header .container {
+    flex-direction: row;
+  }
+
+  .header {
+    padding: 24px 0;
+  }
+
+  .hero-section {
+    height: 300px;
+  }
+
+  .coffee-grid-section .coffee-card img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .about-section .video {
+    height: 250px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 760px) {
+  .container {
+    width: 760px;
+  }
+
+  .coffee-grid-section .container.grid {
+    gap: 16px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .coffee-grid-section .coffee-card {
+    width: 45%;
+    overflow: hidden;
+  }
+
+  .coffee-grid-section-services .coffee-card {
+    width: 31%;
+  }
+
+  .footer .container.links {
+    flex-direction: row;
+  }
+
+  .about-section .video {
+    height: 350px;
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1000px;
+  }
+
+  .hero-section {
+    height: 450px;
+  }
+
+  .hero-details h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .hero-details p {
+    font-size: 18px;
+  }
+
+  .hero-details a {
+    margin-top: 32px;
+    display: block;
+  }
+
+  .coffee-grid-section .coffee-card {
+    width: 23%;
+    overflow: hidden;
+  }
+
+  .coffee-grid-section-services .coffee-card {
+    width: 31%;
+  }
+
+  .coffee-grid-section .coffee-card img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .choose-us-section .container {
+    width: 50%;
+  }
+
+  .contact-wrapper {
+    flex-direction: row;
+  }
+
+  .contact-wrapper .contact-form {
+    width: 45%;
+  }
+  .contact-wrapper .contact-side {
+    width: 45%;
+  }
+  .about-section .video {
+    height: 500px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .coffee-grid-section .coffee-card img {
+    width: 100%;
+    height: 220px;
+  }
+  .about-section .video {
+    height: 600px;
+  }
+}
